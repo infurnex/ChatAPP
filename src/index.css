@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
+
+html ,body {
+  font-family: 'Inter';
+  background-color: "#f4f4fa";
+  margin: 0;
+  padding: 0;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Adjust width as needed */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: rgb(182, 167, 240); /* Color of the thumb */
+  border-radius: 4px; /* Round the corners of the thumb */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Color of the track */
+}
