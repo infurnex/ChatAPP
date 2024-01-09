@@ -131,7 +131,7 @@ export default function Auth() {
        if(UserDetail.length){
             const user = { UserID : UserDetail[0] , UserDetail : UserDetail[1]};
             localStorage.setItem('User', JSON.stringify(user))
-            navigate('/')
+            window.location.reload();
        } 
        else{
         navigate('/Register')
@@ -143,9 +143,8 @@ export default function Auth() {
         const UserDetail  = await User(result.user.email);
         if(UserDetail.length){
             const user = { UserID : UserDetail[0] , UserDetail : UserDetail[1]};
-            console.log(user)
             localStorage.setItem('User', JSON.stringify(user))
-            navigate('/')
+            window.location.reload();
         } 
         else{
          navigate('/Register')
