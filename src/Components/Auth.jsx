@@ -131,7 +131,7 @@ export default function Auth() {
        if(UserDetail.length){
             const user = { UserID : UserDetail[0] , UserDetail : UserDetail[1]};
             localStorage.setItem('User', JSON.stringify(user))
-            window.location.reload();
+            navigate('/')
        } 
        else{
         navigate('/Register')
@@ -144,7 +144,7 @@ export default function Auth() {
         if(UserDetail.length){
             const user = { UserID : UserDetail[0] , UserDetail : UserDetail[1]};
             localStorage.setItem('User', JSON.stringify(user))
-            window.location.reload();
+            navigate('/')
         } 
         else{
          navigate('/Register')
